@@ -126,6 +126,7 @@ button{
   .navbar {
     flex-direction: column;
     justify-content: flex-start;
+    transition: 0.3s;
   }
     
 	.navbar__Items {
@@ -146,6 +147,7 @@ button{
     display: flex;
     height: auto;
     padding-bottom: 20px;
+    transition: 0.3s;
   }
     
 	.navbar__Link-toggle {
@@ -210,6 +212,7 @@ button{
 	flex-direction: row;
 	padding: 10px 0;
 	width: 100%;
+	margin-top: 60px;
 }
 .about-section__image{
 	width: 50%;
@@ -236,6 +239,9 @@ button{
 		width: 100%;
 	}
 	.about-section__image{
+		width: 100%;
+	}
+	.about-section img{
 		width: 100%;
 	}
 	.about-section__description{
@@ -337,11 +343,16 @@ button{
 .service-section_icon{
 	width: 60px;
 	height: auto;
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 }
 .service-section__container h4{
 	font-weight: bold;
-	margin-bottom: 10px;
+	margin-bottom: 4px;
+}
+@media only screen and (max-width: 1000px){
+	.service-section__item{
+		margin-bottom: 24px;
+	}
 }
 /*=====END OF HOMEPAGE'S SERVICE SECTION STYLING=====*/
 
@@ -596,6 +607,7 @@ button{
 .services-listing div{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 /* Hide the browser's default checkbox */
 .container input {
