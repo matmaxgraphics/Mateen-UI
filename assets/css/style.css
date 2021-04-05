@@ -38,6 +38,7 @@ h5{
 }
 p{
 	font-size: 16px;
+	font-weight: normal;
 }
 a{
 	text-decoration: none;
@@ -63,6 +64,9 @@ a.btn{
 }
 button{
 	color: #fff;
+	font-family: poppins, 'sans serrif';
+}
+textarea{
 	font-family: poppins, 'sans serrif';
 }
 /*=====NAVIGATION BAR STYLING=====*/
@@ -501,12 +505,12 @@ button{
 	color: #4B61D6;
 }
 @media only screen and (max-width: 560px){
-		.contact-section__external{
-			flex-direction: column;
-		}
-		.socials-contact{
-			margin-top: 20px;
-		}
+	.contact-section__external{
+		flex-direction: column;
+	}
+	.socials-contact{
+		margin-top: 20px;
+	}
 }
 .hire_us-section{
 	margin-top: 24px;
