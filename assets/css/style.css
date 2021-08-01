@@ -8,6 +8,7 @@ html{
 }
 body{
 	font-family: poppins, 'sans serrif';
+
 }
 h1,h2,h3{
 	font-weight: bold;
@@ -391,6 +392,7 @@ textarea{
 	background: #34495e;
 	max-width: 500px;
 	max-height: 600px;
+	border-radius: 15px;
 }
 .mockup-container img{
 	max-width: 500px;
@@ -532,7 +534,7 @@ textarea{
 	width: 50%;
 }
 .auth-content textarea{
-	height: 40px;
+	height: 100px;
 	padding: 10px 0;
 	width: 100%;
 	
@@ -591,6 +593,9 @@ textarea{
 }
 .services-listing h4{
 	margin: 24px 0 12px;
+}
+.services-listing p{
+	margin-bottom: 12px;
 }
 .services-listing input[type="checkbox"]{
 	width: 30px;
