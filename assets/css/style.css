@@ -393,6 +393,7 @@ textarea{
 	max-width: 500px;
 	max-height: 600px;
 	border-radius: 10px;
+	filter: brightness(0.8);
 }
 .mockup-container img{
 	max-width: 500px;
