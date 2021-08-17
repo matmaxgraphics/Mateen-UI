@@ -1,0 +1,36 @@
+/*======CSS STYLING FOR HYBRID APP=======*/
+
+/*====OVERVIEW SECTION STYLING====*/
+.app-overview__section{
+    display: flex;
+    width: 100%;
+}
+.app-overview__section .text-description__section{
+    width: 60%;
+    padding: 10px;
+
+}
+.app-overview__section .text-description__section header{
+    max-width: 700px;
+}
+.app-overview__section .image-display__section{
+   width: 40%;
+   justify-content: center;
+}
+.app-overview__section .image-display__section img{
+    width: 60%;
+    height: auto;
+ }
+/*====END OF OVERVIEW SECTION STYLING====*/
+
+
+/*====PROBLEM SECTION STYLING====*/
+ .problem-section p{
+    width: 80%;
+ }
+
+/*====END OF PROBLEM SECTION STYLING====*/
+
+
+
+/*========END OLF CSS STYLING FOR HYBRID APP=======*/
