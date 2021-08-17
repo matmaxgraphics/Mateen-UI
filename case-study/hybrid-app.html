@@ -61,7 +61,7 @@
     </nav>
   </div>
 
-  <div class="padding-wrapper">
+  <div class="padding-wrapper case-study__wrapper">
     <div class="app-overview__section">
       <section class="text-description__section">
         <header>
@@ -73,7 +73,7 @@
       </section>
 
       <section class="image-display__section">
-        <img src="images/hybrid//splash-screen.png" alt="splash screen for hybrid app">
+        <img src="images/hybrid/splash-screen.png" alt="splash screen for hybrid app">
       </section>
     </div>
 
@@ -85,14 +85,65 @@
       <p>As an individual , I often create tasks list which I find difficult ro follow up due to busy activities and also, no constant 
         reminder of the tasks I have to complete. Eventually leading me to forgetting about the tasks I’ve created on the to-do apps 
         on my smart device.</p>
+    </div>
 
+
+    <div class="app-overview__section">
+      <section class="text-description__section">
+        <header>
+        <h4>GOAL</h4>
+          <h2>What outcome is expected?</h2>
+          <p>The aim is to design an app that helps track the progreess of tasks created on 
+            the app and give a realtime feedback as a task is completed. In order to make 
+            the user keep in mind the tasks created, visual feedback will be shown through 
+            the notification pane of the smartphone. This constantly reminds the user the 
+            tasks to be completed. In addition, the tasks created will be backedup to a 
+            cloud database so it can be accessed anytime, anywhere. This step helps 
+            prevent data loss.</p>
+        </header>
+      </section>
+
+      <section class="image-display__section">
+        <img src="images/hybrid/notif-panel.png" alt="splash screen for hybrid app">
+      </section>
+    </div>
+
+
+    <div class="ideate-section">
+      <header>
+        <h4>IDEATION</h4>
+        <h2>Idea generation and problem solving</h2>
+      </header>
+      <p>After deciding the features the app is expected to have, I checked out similar to-do apps to get a better insight of how a 
+        typical to-do app looks like. Afterwards, I created a userflow that shows a user’s journey when interacting with the app, 
+        starting from the splash screen to where lists are created and completed.</p>
+      <img src="images/hybrid/sitemap.png" alt="image showing the sitemap of hybrid app">
+      <p>Using the userflow, I sketched out a wireframe on a paper that represents the skeleton of the to-do app interface.</p>
+      <img src="images/hybrid/sketch.png" alt="sketch showing the wireframe of hybrid app">
+    </div>
+
+
+    <div class="prototype-section">
+      <header>
+        <h4>PROTOTYPING</h4>
+        <h2>Steps taken to create the final design</h2>
+      </header>
+      <section>
+        <h4>CONSTRAINT</h4>
+        <p>I was stuck with the problem of getting the perfect illustrations for the onboarding, so I created one from scratch.</p>
+        <img src="images/hybrid/illustrations.png" alt="illustrations used for hybrid app">
+        <h4>COLOR DECISION</h4>
+        <p>I chose to use blue-purple color scheme because purple both calms and stimulates the body, putting the mind in the right 
+          for introspection. Blue also signifies progress and ambition which tallies with the aim of the app.</p>
+        <img src="images/hybrid/colors.png" alt="sketch showing the wireframe of hybrid app">
+      </section>
     </div>
 
 
 
     <div class="contact-section">
 
-      <header>
+      <header class="about-contact__header">
       <h4>CONTACT US</h4>
       <h2>Get in touch with us through mail or socials for any enquiry</h2>
       </header>
@@ -112,12 +163,12 @@
         </section>
       </div>
       <div class="hire_us-section">
-        <header>
+        <header class="hire-us__header">
       <h4>HIRE US</h4>
       <h2>Want to start a project with us?</h2>
       </header>
       <div class="auth-content">
-        <form action="../submit.php" method="post">
+        <form action="index.html" method="get">
           <div class="input-field__top">
             <div class="input-field input-field__name">
               <input type="text" name="nameHASHED" required=""><label>Name</label>
@@ -132,8 +183,7 @@
             <div>
               <label class="container">Interface Design
                 <input type="checkbox" name="ui-design" value="ui-design">
-                <span class="checkmark"></span>
-                
+                <span class="checkmark"></span> 
               </label>
               <label class="container">Website Development
                 <input type="checkbox" name="development" value="development">
@@ -150,9 +200,9 @@
             </div>
           </div>
           <div class="input-field textarea-input">
-            <textarea name="messageHASHED" required=""></textarea><label>Project Details(summary)</label>
+            <textarea name="messageHASHED" required=""></textarea><label>Project Details</label>
           </div>
-          <button type="submit" name="submit-btn" class="btn" >Send</button>
+          <button type="submit" name="submit-btn" class="btn margin-bottom" >Send</button>
 
         </form>
 
