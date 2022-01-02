@@ -1,8 +1,12 @@
 /*======CSS STYLING FOR HYBRID APP=======*/
 .case-study__wrapper{
-    margin-left: 5%;
+    margin: 40px 5% 0 5%;
 }
-
+@media only screen and (max-width: 768px) {
+    .case-study__wrapper{
+        margin-top: 100px;
+    }
+}
 /*====OVERVIEW SECTION STYLING====*/
 .app-overview__section{
     display: flex;
@@ -29,6 +33,23 @@
     width: 60%;
     height: auto;
 }
+
+@media only screen and (max-width: 780px){
+    .app-overview__section{
+        flex-direction: column;
+    }
+    .app-overview__section .text-description__section{
+        width: 100%;
+    }
+    .app-overview__section .image-display__section{
+        width: 100%;
+        display: grid;
+        place-items: center;
+     }
+     .app-overview__section .image-display__section img{
+         margin-top: 24px;
+    }
+}
 /*====END OF OVERVIEW SECTION STYLING====*/
 
 
@@ -40,7 +61,11 @@
     width: 80%;
     margin-top: 12px;
 }
-
+@media only screen and (max-width: 780px){
+    .problem-section p{
+        width: 100%;
+    }
+}
 /*====END OF PROBLEM SECTION STYLING====*/
 
 
@@ -71,5 +96,94 @@
     margin-top: 48px;
     width: 80%;
     height: auto;
+}
+
+
+.result-screens__section{
+    margin: 72px 0 60px 0;
+}
+.result-screen__container{
+    display: flex;
+    width: 100%;
+    margin: 48px 0 84px 0;
+}
+.result-screen__container .text-description__section{
+    width: 50%;
+    padding: 10px;
+    margin-right: 48px;
+
+}
+.result-screen__container .text-description__section h4{
+    max-width: 700px;
+}
+.result-screen__container .text-description__section p{
+    margin-top: 12px;
+}
+.result-screen__container .image-display__section{
+   width: 50%;
+   display: flex;
+   justify-content: center;
+
+   
+}
+.result-screen__container .image-display__section img{
+    width: 80%;
+    height: auto;
+}
+.result-screen__container .image-display__section .img-small{
+    width: 40%;
+    height: auto;
+}
+@media only screen and (max-width: 780px){
+    .result-screen__container{
+        flex-direction: column;
+    }
+    .container--reverse{
+        flex-direction: column-reverse;
+    }
+    .result-screen__container .text-description__section{
+        width: 100%;
+    }
+    .result-screen__container .image-display__section{
+        width: 100%;
+        display: grid;
+        place-items: center;
+     }
+     .result-screen__container .image-display__section img{
+         margin-top: 24px;
+    }
+}
+/*====END OF SCREENS SECTION STYLING====*/
+
+
+.case-study__navigation{
+    background-color: #080B17;
+    margin: 72px 0 60px 0;
+    color: #fff;
+    padding: 24px;
+    height: 250px;
+}
+.case-study__navigation h4{
+    text-align: center;
+}
+.case-study__navigation--container{
+    display: flex;
+    width: 100%;
+    margin-top: 24px;
+}
+.case-study__navigation--container a{
+    color: #fff;
+}
+.case-study__navigation--container a:hover{
+    color: rgb(192, 182, 182);
+}
+.case-study__navigation--container .previous, .next{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.case-study__navigation--container .next{
+    text-align: right;
 }
 /*========END OF CSS STYLING FOR HYBRID APP=======*/

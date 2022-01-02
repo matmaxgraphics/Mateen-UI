@@ -34,8 +34,14 @@ h5{
 .bold{
 	font-weight: bold;
 }
+.margin-top{
+	margin-top: 40px;
+}
 .margin-bottom{
 	margin-bottom: 20px;
+}
+.hero-section-margin{
+	margin-top: 110px;
 }
 p{
 	font-size: 16px;
@@ -69,6 +75,7 @@ button{
 }
 textarea{
 	font-family: poppins, 'sans serrif';
+	resize: none;
 }
 /*=====NAVIGATION BAR STYLING=====*/
 .banner-wrapper{
@@ -121,6 +128,9 @@ textarea{
 @media only screen and (max-width: 768px) {
   .navbar {
   background-color: #efefef;
+  position: fixed;
+  top: 0;
+  width: 100%;
   }
   .navbar-logo{
   width: 45px;
