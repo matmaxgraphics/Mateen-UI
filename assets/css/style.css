@@ -1,0 +1,676 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: poppins, 'sans serrif';
+
+}
+h1,h2,h3{
+	font-weight: bold;
+	line-height: 1.2;
+}
+h1{
+	font-size: clamp(2em, 3em, 3.5em);
+}
+h2{
+	font-size: clamp(1.75em, 4vw, 2.5em);
+}
+h3{
+	font-size: 32px;
+}
+h4{
+	font-size: 24px;
+	font-weight: normal;
+}
+h5{
+	font-size: 18px;
+	font-weight: normal;
+}
+.bold{
+	font-weight: bold;
+}
+.margin-bottom{
+	margin-bottom: 20px;
+}
+p{
+	font-size: 16px;
+	font-weight: normal;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.btn{
+	padding: 15px 40px;
+	border: 0px;
+	border-radius: 8px;
+	background-color: #4B61D6;
+	font-family: poppins, 'sans serrif';
+	transition: 0.3s;
+	height: 54px;
+	width: auto;
+}
+.btn:hover{
+	background-color: #080B17;
+	transition: 0.3s;
+}
+a.btn{
+	text-decoration: none;
+	color: #fff;
+}
+button{
+	color: #fff;
+	font-family: poppins, 'sans serrif';
+}
+textarea{
+	font-family: poppins, 'sans serrif';
+}
+/*=====NAVIGATION BAR STYLING=====*/
+.banner-wrapper{
+	min-height: 80vh;
+}
+.navbar {
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  color: white;
+  justify-content: space-around;
+}
+.navbar-logo{
+  width: 50px;
+  height: auto;
+  margin: 5px 7px;
+}
+.navbar__Link {
+  padding-right: 8px;
+}
+
+.navbar__Items {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.navbar__Items li{
+  list-style: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+.navbar__Items li a{
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  line-height: 27px;
+  transition: 0.3s;
+}
+.navbar__Items li a:hover{
+  transition: 0.3s;
+  color: #4B61D6;
+}
+.navbar__Items--right {
+  margin-left:auto;
+}
+
+.navbar__Link-toggle {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+  background-color: #efefef;
+  }
+  .navbar-logo{
+  width: 45px;
+  height: auto;
+  margin: 3px 5px;
+}
+  .navbar__Items,
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: 0.3s;
+  }
+    
+	.navbar__Items {
+    display:none;
+    margin-left: 0;
+  }
+  .navbar__Items li{
+  display: block;
+	} 
+	.navbar__Items--right {
+    margin-left:0;
+  }
+  .navbar__Items--right .hire-btn{
+  	margin-top: 40px;
+  }
+    
+	.navbar__ToggleShow {
+    display: flex;
+    height: auto;
+    padding-bottom: 20px;
+    transition: 0.3s;
+  }
+    
+	.navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #000;
+    font-size: 24px;
+  } 
+}
+/*=====END OF NAVIGATION BAR STYLING=====*/
+
+
+/*=====HERO SECTION STYLING=====*/
+.hero-section{
+	display: grid;
+	place-items: center;
+}
+.hero-section .hero-section__title{
+	text-align: center;
+	max-width: 800px;
+	margin: 120px 0 20px 0px;
+	padding: 0 15px;
+}
+.hero-section .about-btn{
+	width: 200px;
+	text-align: center;
+}
+@media (max-width: 1000px){
+	.hero-section .hero-section__title h1{
+		font-size: 40px;
+	}
+}
+@media (max-width: 600px){
+	.hero-section .hero-section__title{
+		font-size: 2em;
+		margin: 100px 0 20px 0px;
+	}
+}
+@media (max-width: 360px){
+	.hero-section .hero-section__title{
+		font-size: 1.8em;
+		margin: 80px 0 20px 0px;
+	}
+}
+/*=====END OF HERO SECTION STYLING=====*/
+
+/*=====OUTSIDE GUTTER(PADDING) CONTROL STYLING=====*/
+.padding-wrapper{
+	padding: 0 50px 0 50px;
+}
+@media only screen and (max-width: 400px){
+	.padding-wrapper{
+		padding: 0 30px 0 30px;
+	}
+}
+/*=====HOMEPAGE'S ABOUT SECTION STYLING=====*/
+.about-section{
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0;
+	width: 100%;
+	margin-top: 60px;
+}
+.about-section__image{
+	width: 50%;
+}
+.about-section img{
+	margin-right: 10px;
+	width: 80%;
+	height: auto;
+}
+.about-section__description{
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+}
+.about-section__description h2{
+	margin-bottom: 18px;
+}
+.about-section__description span{
+	color: #4B61D6;
+}
+@media only screen and (max-width: 700px){
+	.about-section{
+		flex-direction: column;
+		width: 100%;
+	}
+	.about-section__image{
+		width: 100%;
+	}
+	.about-section img{
+		width: 100%;
+	}
+	.about-section__description{
+		width: 100%;
+	}
+}
+/*=====END OF HOMEPAGE'S ABOUT SECTION STYLING=====*/
+
+.about-header__section{
+	margin: 20px 0 50px 0;
+}
+.about-header__section h4{
+	margin-bottom: 5px;
+}
+.about-header__section h2{
+	max-width: 500px;
+	margin-bottom: 10px;
+}
+.about-header__section h2 span{
+	color: #4B61D6;
+}
+.about-header__section p{
+	width: 80%;
+}
+.showcase-section{
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0;
+	width: 100%;
+}
+.showcase-section__image{
+	width: 50%;
+}
+.showcase-section img{
+	margin-right: 10px;
+	width: 80%;
+	height: auto;
+}
+.showcase-section__description{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 10%;
+}
+.showcase-section__description .text-group__exception{
+	margin-bottom: 15px;
+}
+
+.showcase-section__description p{
+	width: 100px;
+	line-height: 1.2;
+}
+@media only screen and (max-width: 1000px){
+	.showcase-section{
+		flex-direction: column;
+		width: 100%;
+	}
+	.showcase-section__image{
+		width: 100%;
+	}
+	.showcase-section img{
+	width: 100%;
+}
+	.showcase-section__description{
+		width: 100%;
+		margin-top: 25px;
+	}
+}
+.about-contact__header{
+	margin: 60px 0 30px 0;
+}
+.about-contact__header h2{
+	max-width: 750px;
+}
+.hire-us__header{
+	margin-bottom: 24px;
+}
+/*=====HOMEPAGE'S SERVICE SECTION STYLING=====*/
+.service-section{
+	margin: 50px 0 30px 0;
+
+}
+.service-section header{
+	margin-bottom: 30px;
+}
+.service-section header h2{
+	max-width: 800px;
+}
+.service-section__container{
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-gap: 10px;
+	padding: 10px;
+}
+.service-section_icon{
+	width: 60px;
+	height: auto;
+	margin-bottom: 12px;
+}
+.service-section__container h4{
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+@media only screen and (max-width: 1000px){
+	.service-section__item{
+		margin-bottom: 24px;
+	}
+}
+/*=====END OF HOMEPAGE'S SERVICE SECTION STYLING=====*/
+
+
+/*=====PROJECT SECTION STYLING=====*/
+.project-section{
+	margin: 50px 0 30px 0;
+}
+.project-section header{
+	margin-bottom: 30px;
+}
+.project-section header h2{
+	max-width: 750px;
+}
+.projects-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: baseline;
+	justify-content: center;
+}
+.mockup-container{
+	position: relative;
+	display: inline-block; /* Make the width of box same as image */
+	margin: 10px;
+	transition: .3s;
+}
+.mockup-container:hover{
+	transform: scale(.97);
+	transition: .3s;
+}
+.mockup-container__image {
+	background: #34495e;
+	max-width: 500px;
+	max-height: 600px;
+	border-radius: 10px;
+	filter: brightness(0.8);
+}
+.mockup-container img{
+	max-width: 500px;
+	height: 600px;
+}
+
+.mockup-container .image-contain{
+	object-fit: cover;
+	object-position: center;
+}
+
+.mockup-container__text{
+	position: absolute;
+	z-index: 999;
+	text-align: left;
+	top: 10px; 
+	/*background: rgba(0, 0, 0, 0.8);*/
+	color: #fff;
+	padding: 0 20px 0 20px; 
+}
+.project-page__section{
+	margin-top: 72px;
+}
+.project-page__section ul{
+  display: flex;
+  margin-bottom: 36px;
+}
+.project-page__section ul li{
+  list-style: none;
+  background-color: #efefef;
+  border-radius: 5px;
+  border: 0.7px solid #eee;
+  padding: 12px 24px;
+  margin: 5px;
+  cursor: pointer;
+
+}
+.project-page__section ul li.active{
+  background-color: #222;
+  color: #fff;
+}
+@media only screen and (max-width: 550px){
+	.mockup-container__image {
+		width: 100%;
+		height: auto;
+	}
+	.mockup-container img{
+		height: 450px;
+	}
+	.project-page__section ul li{
+	  padding: 8px 20px;
+	  margin: 5px;
+	}
+}
+/*=====END OF PROJECT SECTION STYLING=====*/
+
+
+/*=====PROCESS SECTION STYLING=====*/
+.process-section{
+	margin: 50px 0 30px 0;
+}
+.process-section header{
+	margin-bottom: 30px;
+}
+.process-section header h2{
+	max-width: 750px;
+}
+.process-wrapper{
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-gap: 10px;
+	padding: 10px;
+}
+.process-section__items{
+	margin-bottom: 10px;
+}
+.process-section__items span{
+	display: flex;
+	color: #fff;
+	background-color: #080B17;
+	padding: 5px;
+	width: 50px;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 8px;
+	margin-bottom: 5px;
+}
+/*=====END OF PROCESS SECTION STYLING=====*/
+
+.contact-section__external{
+	display: flex;
+	justify-content: space-between;
+	max-width: 600px;
+}
+
+.contact-section__external h5{
+	margin-bottom: 12px;
+}
+.email-contact a{
+	text-decoration: underline;
+}
+
+.socials-contact .social-icons{
+	font-size: 32px;
+	margin-right: 12px;
+}
+.socials-contact .social-icons:hover{
+	color: #4B61D6;
+}
+@media only screen and (max-width: 560px){
+	.contact-section__external{
+		flex-direction: column;
+	}
+	.socials-contact{
+		margin-top: 20px;
+	}
+}
+.hire_us-section{
+	margin-top: 24px;
+}
+
+.auth-content input{
+		padding: 10px 0;
+		width: 90%;
+}
+.input-field__top{
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	align-items: baseline;
+}
+
+.input-field__top .input-field__name, .input-field__top .input-field__email{
+	width: 50%;
+}
+.auth-content textarea{
+	height: 100px;
+	padding: 10px 0;
+	width: 100%;
+	
+}
+.auth-content .textarea-input{
+	margin: 30px 0 20px 0;
+}
+.auth-content input, .auth-content textarea{
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #999;
+}
+.auth-content input[type="submit"]{
+	border-bottom: none;
+	cursor: pointer;
+	background-color: #222;
+	color: #fff;
+	margin-bottom: 0;
+}
+.auth-content form .input-field{
+	position: relative;
+}
+.auth-content form .input-field label{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	pointer-events: none;
+	transition: .5s;
+}
+.auth-content input:focus ~ label, .auth-content textarea:focus ~ label,
+.auth-content input:valid ~ label, .auth-content textarea:valid ~ label {
+	top: -12px;
+	left: 0;
+	font-size: 14px;
+	font-weight: bold;
+	color: #080B17;
+}
+.auth-content input:focus, .auth-content textarea:focus,
+.auth-content input:valid, .auth-content textarea:valid{
+	border-bottom: 2px solid #080B17;
+}
+@media only screen and (max-width: 700px){
+	.input-field__top{
+		flex-direction: column;
+	}
+	.auth-content input{
+		width: 100%;
+	}
+	.input-field__top .input-field__name, .input-field__top .input-field__email{
+		width: 100%;
+	}
+	.input-field__top .input-field__email{
+		margin-top: 20px;
+	}
+}
+.services-listing h4{
+	margin: 24px 0 12px;
+}
+.services-listing p{
+	margin-bottom: 12px;
+}
+.services-listing input[type="checkbox"]{
+	width: 30px;
+	height: auto;
+	font-size: 32px;
+}
+.container {
+	  display: block;
+	  position: relative;
+	  padding-left: 45px;
+	  margin: 0 0 12px 10px;
+	  cursor: pointer;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+}
+.services-listing div{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+/* Hide the browser's default checkbox */
+.container input {
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	  height: 0;
+	  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  margin-left: 18px; 
+  border: 1px solid #4B61D6;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #efefef;
+  border: 1px solid #080B17;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #4B61D6;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7.5px;
+  top: 3.5px;
+  width: 2px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
