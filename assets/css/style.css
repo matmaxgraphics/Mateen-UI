@@ -40,9 +40,7 @@ h5{
 .margin-bottom{
 	margin-bottom: 20px;
 }
-.hero-section-margin{
-	margin-top: 110px;
-}
+
 p{
 	font-size: 16px;
 	font-weight: normal;
@@ -79,7 +77,7 @@ textarea{
 }
 /*=====NAVIGATION BAR STYLING=====*/
 .banner-wrapper{
-	min-height: 80vh;
+	height: 100%;
 }
 .navbar {
   display: flex;
@@ -131,7 +129,9 @@ textarea{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9999;
   }
+  
   .navbar-logo{
   width: 45px;
   height: auto;
@@ -173,7 +173,10 @@ textarea{
     margin-top: 10px;
     color: #000;
     font-size: 24px;
-  } 
+  }
+  .hero-section-margin{
+	margin-top: 110px;
+} 
 }
 /*=====END OF NAVIGATION BAR STYLING=====*/
 
@@ -198,10 +201,15 @@ textarea{
 		font-size: 40px;
 	}
 }
+@media (max-width: 768px){
+	.hero-section .hero-section__title{
+		margin-top: 160px;
+	}
+}
 @media (max-width: 600px){
 	.hero-section .hero-section__title{
 		font-size: 2em;
-		margin: 100px 0 20px 0px;
+		margin: 140px 0 20px 0px;
 	}
 }
 @media (max-width: 360px){
@@ -218,7 +226,7 @@ textarea{
 }
 @media only screen and (max-width: 400px){
 	.padding-wrapper{
-		padding: 0 30px 0 30px;
+		padding: 0 30px 0 15px;
 	}
 }
 /*=====HOMEPAGE'S ABOUT SECTION STYLING=====*/
@@ -227,7 +235,7 @@ textarea{
 	flex-direction: row;
 	padding: 10px 0;
 	width: 100%;
-	margin-top: 60px;
+	margin-top: 96px;
 }
 .about-section__image{
 	width: 50%;
@@ -345,12 +353,13 @@ textarea{
 }
 .service-section header h2{
 	max-width: 800px;
+	margin-top: 12px;
 }
 .service-section__container{
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	grid-gap: 10px;
+	gap: 24px;
 	padding: 10px;
 }
 .service-section_icon{
@@ -473,7 +482,7 @@ textarea{
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	grid-gap: 10px;
+	gap: 24px;
 	padding: 10px;
 }
 .process-section__items{
